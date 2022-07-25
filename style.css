@@ -1,0 +1,325 @@
+*{
+    margin: 0%;
+    font-family: "Open-Sans";
+}
+
+
+nav {
+    height: 9rem;
+    margin: 0%;
+    background-color: black;
+    padding: 1.7rem;
+    box-shadow: 0px 6px 15px blue;
+}
+
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: black;
+    color: blue;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgb(159, 159, 248);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+ 
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.container a, .dropbtn{
+    text-decoration: none;
+    margin: 0.5rem;
+    padding: 0.5rem 4rem ;
+    color: blue;
+    font-weight: bolder;
+    font-size: 1.7rem;
+}
+.container a:hover, .dropbtn:hover{
+    color: white;
+    transition-duration: 1s;
+    transition-delay: 4ms;
+}
+.front{
+    height: 55rem;
+}
+div .img{
+    width: 100%;
+    height: 100%; 
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+.content{
+    position: absolute;
+    text-align: center;
+    top: 29rem;
+    left: 3rem;
+}
+.content img{
+    width: 22%;
+    height: 12rem;
+    margin: 1.4rem;
+    box-shadow: 2px 0px 20px black;
+    border: 2px solid black;
+}
+.content p{
+    font-size: 6.5rem;
+    color: blue;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+/*styling the down page*/
+.main{
+    margin-top: 5rem;
+}
+.down{
+    text-align: center;
+    padding: 2rem;
+}
+.down p{
+    font-size: 4rem;
+    font-weight: bolder;
+    color: blue;
+}
+.products{
+    margin-top: 3rem;
+    text-align: center;    
+    display: flex;
+    justify-content: center;
+}
+.products p{
+    font-size: 2rem;
+    color: black
+}
+.products .box{
+    margin: 2rem;
+    width: 20%;
+    height: 38rem;
+    box-shadow: 5px 5px 15px rgb(88, 86, 86);
+}
+.products .box img{
+    width: 70%;
+    height: 65%;
+    margin: 2rem;
+    border: 1px solid black;
+}
+.products button{
+    margin: 0.5rem;
+    padding: 5px;
+    background-color: rgba(0, 0, 255, 0.89);
+    border: 1.5px solid black;
+    width: 5rem;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+.products button:hover{
+    color: white;
+    transition-duration: 1s;
+    transition-delay: 5ms;
+}
+/*carousel styling */
+.slide{
+    width: 75%;
+    height: 35rem;
+    align-items: center;
+    text-align: center;
+    margin:auto;
+}
+.carousel-image{
+    width: 100%;
+    height: 35rem;
+}
+.carousel-image img{
+    width: 100%;
+    height: 100%;
+}
+.carousel-caption span{
+    color: rgb(252, 90, 176);
+    font-size: 2rem;
+    font-weight: bold;
+    float: left;
+    margin: 2px;
+}
+.carousel-caption p{
+    color: rgb(250, 14, 140);
+    font-size: 4rem;
+    float: left;
+    font-weight: bolder;
+}
+
+/*Footer styling */
+.footer{
+    padding: 3rem;
+    background-color: rgb(131, 128, 128);
+    text-align: center;
+    opacity: 0.8;
+    margin-top: 15rem;
+}
+ 
+.head h1{
+    text-shadow: 2px 2px 3px black;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+}
+
+.head a{
+    color: white;
+    margin: 0.8rem;
+    font-size: 3.4rem;
+}
+.head a:hover{
+    color: rgb(108, 108, 250);
+}
+.head p{
+    color: white;
+    margin: 0.8rem;
+    font-size: 1.8rem;
+}
+/*Account page*/
+#box1, .box1{
+    margin: 2.5rem;
+    padding: 2.5rem;
+    background-color:blanchedalmond;
+}
+body h1{
+    color: blue;
+    font-weight: bolder;
+    text-shadow: 2px 2px 3px blue;
+    font-style: italic;
+}
+.form{
+    margin: 2rem;
+    padding: 2rem;
+    display: flex;
+}
+.form h3{
+    color: black;
+}
+.form .login{
+    border: 2px solid black;
+    width: 40%;
+    padding: 2rem;
+    margin: 2.5rem;
+}
+.form .signup{
+    border: 2px solid black;
+    width: 40%;
+    padding: 2rem;
+    margin: 2.5rem;
+}
+.form .input{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Styiling the inputs of the form*/
+form input{
+    border-radius: 5px;
+}
+form button{
+    margin: 2rem;
+    padding: 4px;
+    font-size: 2rem;
+    border-radius: 5px;
+    background-color: black;
+    color:  blue;
+}
+form button:hover{
+    color:white;
+    transition-duration: 1s;
+    transition-delay: 5ms;
+}
+
+/*Styling the moods & emotional page*/
+.box1 .images{
+    display: flex;
+    flex-wrap: wrap;
+}
+.images img{
+    position: relative;
+    display: block;
+    width: 22rem;
+    margin: 2.3rem 1.3rem;
+}
+.box1 .btn{
+    background-color: blue;
+    color: white;
+}
+.images img:hover{
+    opacity: 0.4;
+}
+.box1 .subjects{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.subjects p{
+    margin: 4px;
+    padding: 4px;
+    border: 2px solid black;
+}
+/*Donation Page*/
+
+.payment a{
+    font-size: 4rem;
+    border-radius: 5px;
+    background-color: white;
+    margin: 2rem;
+}
+.payment a:hover{
+    border:1.5px solid black;
+}
+.payment a i{
+    text-decoration: none;
+    font-size: 3rem;
+    padding: 1rem;
+    color: blue;
+}
+.box1 input{
+    width: 20rem;
+    padding: 1rem;
+    margin: 2rem;
+}
+form #dntBtn{
+    margin: 0.5rem;
+    padding: 5px;
+    background-color: rgba(0, 0, 255, 0.89);
+    border: 1.5px solid black;
+    width: 7rem;
+    border-radius: 5px;
+    font-size:1.7rem;
+    font-weight: bold;
+    color:deeppink;
+}

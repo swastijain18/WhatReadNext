@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Account</title>
+        <link rel="stylesheet" href="style.css">
+
+        <!--Links to add font icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+        
+        <!--Bootstrap links for class carousel-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="top">
+            <h1>WHICH BOOK NEXT!!</h1>
+        </div>
+        <nav class="nav">
+            <div class="container">
+                <a href="index.html">HOME</a>
+                <div class="dropdown">
+                    <button class="dropbtn">CATOGORIES</button>
+                    <div class="dropdown-content">
+                      <a href="moods.html">Mood & Emotions</a>
+                      <a href="text.html">TextBooks</a>
+                      <a href="best.html">Best Seller</a>
+                      <a href="character.html">Character & Plot</a>                      
+                    </div>
+                  </div>
+                <a href="donate.html">DONATE</a>
+                <a href="#foot">CONTACT</a>
+                <a href="login.html" target="_blank">LOGIN/SIGNUP</a>
+            </div>
+        </nav>
+        <div id="box1">
+            <h1>MY ACCOUNT</h1>
+            <div class="form">
+                <div class="login">
+                    <h3>Log In</h3>
+                    <form class="input" name="login" method="POST">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" required>
+                        <label for="password">Password</label>
+                        <input type="text" name="password" required>
+                        <button  type="submit">LogIn</button>
+                    </form>
+                </div>
+                <div class="signup">
+                    <h3>Sign Up</h3>
+                    <form class="input" name="signup">
+                        <label for="name">Name</label>
+                        <input type="text" name="Name" required>
+                        <label for="mail">Email</label>
+                        <input type="email" name="MailID" required>
+                        <label for="pass">Password</label>
+                        <input type="text" name="Pass" required>
+                        <button  type="submit">Create Account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer class="footer" id="foot">
+            <div class="head">
+                <h1>Follow us</h1>
+                <div class="follow">
+                    <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="head">
+                <h1>Contact us</h1>
+                <div class="contact">
+                    <p>jainswasti2020@gmail.com</p>
+                    <p>8700577173</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby8BAC65pFjpMaV9A4HUXxZ6GLtbuH8tzR9SV1c5gweoszjazDq/exec'
+        const form = document.forms['login']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for creating new account..! We Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins for carousel) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</html>
